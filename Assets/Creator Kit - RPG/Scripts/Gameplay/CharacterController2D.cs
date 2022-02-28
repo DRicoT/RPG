@@ -67,6 +67,10 @@ namespace RPGM.Gameplay
 
         void Update()
         {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
             switch (state)
             {
                 case State.Idle:
